@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+.hero-section {
+    height: 100vh;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+}
+
+.hero-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo-container img {
+    height: 100px;
+    /* Adjust as per the logo size */
+    width: auto;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    /* padding: 0px 10px; */
+    margin: 0px 10px;
+    width: 55%;
+}
+
+
+.nav-bar a:link,
+.nav-bar a:visited {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 7px 20px;
+    border-radius: 17px;
+
+}
+
+.nav-bar a:hover,
+.nav-bar a:active {
+    color: #732354;
+    background-color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 7px 20px;
+    border-radius: 17px;
+    
+}
+
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-content {
+    width: 65%;
+    text-align: center;
+}
+
+.hero-title {
+    color: #732354;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.hero-name {
+    font-family: "electrolize-regular", "Electrolize", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 72px;
+}
+
+.hero-description {
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.hero-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    border: 1px solid #732354;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+    font-weight: bold;
+
+}
+
+.hero-btn:hover {
+    background-color: #fff;
+    color: #732354;
+    border: 1px solid #732354;
+    font-weight: bold;
+}
+.hero-image {
+    display: flex;
+    /* justify-content: top; */
+    align-items: center;
+    width: 35%; /* Set the width of the hero image section */
+    height: 100%; /* Set the height of the hero image section */
+    padding: 0px 0px;
+}
+
+.hero-image img {
+    height: 498px;
+    width: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensures image covers the container nicely */
+}
