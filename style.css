@@ -130,7 +130,7 @@ header {
 /* About Section */
 
 .about_section {
-    background-color: #f4f4f4;
+    background-color: #fff;
     padding: 50px 0;
     display: flex;
     justify-content: center;
@@ -254,7 +254,7 @@ header {
     mask-repeat: no-repeat;
     -webkit-mask-size: 100% 100%;
     mask-size: 100% 100%;
-  }
+}
 
 .devicon-plain--codeigniter-wordmark {
     display: inline-block;
@@ -338,4 +338,80 @@ header {
     mask-repeat: no-repeat;
     -webkit-mask-size: 100% 100%;
     mask-size: 100% 100%;
-  }
+}
+
+/* resume_section */
+.resume_section {
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+}
+.resume_section h2{
+    font-size: 45px;
+    margin-left: 150px;
+    font-weight: bolder;
+}
+.resume_section p{
+    font-size: 18px;
+    margin-left: 100px;
+    font-weight: 500;
+}
+.resume_section a:link,
+.resume_section a:visited {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #1a1a1a;
+    color: #fff;
+    font-size: 22px;
+    padding: 15px 30px;
+    align-self:flex-start;
+    margin-left: 150px;
+}
+
+/* Contact Section */
+.contact_section {
+    height: 350px;
+    
+}
+
+.contact_background {
+    background: rgb(134, 48, 202);
+    background: linear-gradient(90deg, rgba(134, 48, 202, 1) 0%, rgba(115, 35, 84, 1) 100%);
+    height: 350px;
+    color: #fff;
+    border-radius: 143px 143px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.contact_heading {
+   
+    width: 45%;
+    padding-left: 50px;
+    font-size: 33px;
+}
+.contact_heading a:link,
+.contact_heading a:visited {
+   text-decoration: none;
+   color: #fff;
+}
+
+.contact_slogan {
+    text-align: left;
+    width: 55%;
+    font-size: 35px;
+
+}
+
+/* Footer */
+footer{
+    background-color: #1A1A1A;
+    color: #fff;
+    padding: 8px 50px;
+    font-size: 14px;
+}
+
