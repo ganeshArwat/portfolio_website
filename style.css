@@ -178,7 +178,9 @@ header {
     width: 100%;
     background-color: #1a1a1a;
     color: #fff;
-    overflow-y: hidden;
+    overflow-y: scroll;
+    scrollbar-width: thin; /* Make scrollbar thinner */
+    scrollbar-color: #8ABA78 #1c1c1c; /* Thumb and track colors */
 }
 
 /* Skills Section */
