@@ -30,7 +30,8 @@ header {
     justify-content: space-between;
     /* padding: 0px 10px; */
     margin: 0px 10px;
-    width: 55%;
+    /* width: 55%; */
+    width: 30%;
 }
 
 .nav-bar a:link,
