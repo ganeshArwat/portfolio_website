@@ -30,8 +30,8 @@ header {
     justify-content: space-between;
     /* padding: 0px 10px; */
     margin: 0px 10px;
-    /* width: 55%; */
-    width: 30%;
+    width: 55%;
+    /* width: 30%; */
 }
 
 .nav-bar a:link,
@@ -343,6 +343,22 @@ header {
     mask-size: 100% 100%;
 }
 
+/* Certification Section */
+.Certification_banner{
+    height: 300px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+    background: -webkit-linear-gradient(45deg, #A4A3AB, #DED9DD);
+}
+.Certification_banner h2{
+    font-size: 45px;
+    /* margin-left: 150px; */
+    font-weight: bolder;
+    text-align: center;
+}
 /* resume_section */
 .resume_section {
     height: 320px;

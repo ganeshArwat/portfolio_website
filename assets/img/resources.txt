@@ -5,3 +5,13 @@ https://coolors.co/732354-0d1117-447604-6cc551-9ffcdf
 https://bruno-simon.com/
 https://www.hostinger.in/tutorials/web-developer-portfolio#1_Charles_Bruyerre
 https://www.onyedika.xyz/
+
+things to be added
+Responsive Design
+Certification Section
+Projects Section
+Experience Section
+Overall animations
+Smooth scrolling effects
+A catchy tagline or introduction with dynamic text or typing effects.
+Parallax Scrolling

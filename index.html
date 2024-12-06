@@ -5,8 +5,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ganesh Arwat</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/certification.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -16,9 +20,9 @@
         </div>
         <nav class="nav-bar">
             <a href="#skills_section">Skills</a>
-            <!-- <a href="#Certification">Certifications</a> -->
-            <!-- <a href="#">Projects</a> -->
-            <!-- <a href="#">Experience</a> -->
+            <a href="#Certification_section">Certifications</a>
+            <a href="#">Projects</a>
+            <a href="#">Experience</a>
             <a href="#resume_section">Resume</a>
             <a href="#contact_section">Contact</a>
         </nav>
@@ -130,13 +134,32 @@
 
         </div>
     </section>
+    <section id="Certification_section" class="Certification_section">
+        <div class="Certification_heading" id="Certification_heading">
+            <h2>Certifications & Achievements</h2>
+        </div>
 
+        <div class="Certification" id="Certification">
+            <div class="gallery">
+                <div class="gallery-container">
+                    <img src="assets/certificates/1.png" alt="" class="gallery-item gallery-item-1" data-index="1">
+                    <img src="assets/certificates/2.png" alt="" class="gallery-item gallery-item-2" data-index="2">
+                    <img src="assets/certificates/3.png" alt="" class="gallery-item gallery-item-3" data-index="3">
+                    <img src="assets/certificates/4.png" alt="" class="gallery-item gallery-item-4" data-index="4">
+                    <img src="assets/certificates/5.png" alt="" class="gallery-item gallery-item-5" data-index="5">
+                    <img src="assets/certificates/6.png" alt="" class="gallery-item gallery-item-6" data-index="6">
+                    <img src="assets/certificates/7.png" alt="" class="gallery-item gallery-item-7" data-index="7">
+                </div>
+                <div class="gallery-controls"></div>
+            </div>
+        </div>
+
+    </section>
     <section class="resume_section" id="resume_section">
         <h2>Download My Resume</h2>
         <p>Stay updated with latest Projects and Skills</p>
         <a href="assets/Ganesh_Arwat_Resume.pdf" download> Download </a>
     </section>
-
     <section class="contact_section" id="contact_section">
         <div class="contact_background">
             <div class="contact_heading">
@@ -158,6 +181,8 @@
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/certification.js"></script>
 </body>
 
 </html>

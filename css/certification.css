@@ -1,0 +1,237 @@
+.Certification_section {
+    width: 100%;
+    height: 100vh;
+    background: -webkit-linear-gradient(45deg, #A4A3AB, #DED9DD);
+    z-index: -2;
+}
+
+.Certification_heading {
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    /* background-color: red; */
+}
+
+.Certification_heading h2 {
+    font-size: 60px;
+    color: #000
+}
+
+.Certification {
+    /* background-color: blue; */
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.gallery {
+    width: 100%;
+    position: relative;
+}
+
+.gallery-container {
+    /* background-color: green; */
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    position: relative;
+    height: 70vh;
+}
+
+.gallery-container::after {
+    content: '';
+    /* To create the pseudo-element */
+    position: absolute;
+    /* To position it within the container */
+    bottom: -6%;
+    /* Align it to the bottom */
+    left: 50%;
+    /* Position it in the middle horizontally */
+    transform: translateX(-50%);
+    /* Adjust its position to perfectly center it */
+    width: 30vw;
+    /* Specify the width of the image */
+    height: 34vh;
+    /* Specify the height of the image */
+    background-image: url('https://www.w3schools.com/w3images/fjords.jpg');
+    background-image: url('/assets/img/stand_without_background.png');
+    background-size: cover;
+    /* Cover the area of the pseudo-element */
+    background-position: center;
+    /* Center the image inside the pseudo-element */
+    z-index: 1;
+
+}
+
+.gallery::after {
+    content: '';
+    position: absolute;
+    bottom: -4%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 18vh;
+    background-color: white;
+    z-index: 0;
+}
+
+.gallery-controls {
+    height: 15vh;
+    position: relative;
+    z-index: 1;
+}
+
+.gallery-item {
+    border: 13px solid #000;
+    box-shadow: 10px 10px 10px 5px rgba(0, 0, 0, 0.4), -10px 10px 10px 5px rgba(0, 0, 0, 0.4);
+    height: 35vh;
+    width: 22vw;
+    opacity: 0;
+    position: absolute;
+    transition: all 0.3s ease-in-out;
+    z-index: 0;
+}
+
+.gallery-item-1 {
+    left: 11.25%;
+    opacity: 1;
+    transform: translatex(-50%);
+}
+
+.gallery-item-2,
+.gallery-item-4 {
+    /* box-shadow: -2px 5px 33px 6px rgba(0, 0, 0, 0.85); */
+    box-shadow: 10px 10px 10px 5px rgba(0, 0, 0, 0.4), -10px 10px 10px 5px rgba(0, 0, 0, 0.4);
+    border: 13px solid #000;
+    opacity: 1;
+    height: 45vh;
+    width: 28vw;
+    opacity: 1;
+    z-index: 1;
+}
+
+.gallery-item-2 {
+    left: 28.5%;
+    transform: translatex(-50%);
+}
+
+.gallery-item-3 {
+    /* box-shadow: -2px 5px 33px 6px rgba(0, 0, 0, 1); */
+    box-shadow: 10px 10px 10px 5px rgba(0, 0, 0, 0.4), -10px 10px 10px 5px rgba(0, 0, 0, 0.4);
+    border: 13px solid #000;
+    height: 55vh;
+    width: 35vw;
+    /* height: 60vh;
+    width: 42vw; */
+    opacity: 1;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+.gallery-item-4 {
+    left: 71.5%;
+    transform: translatex(-50%);
+}
+
+.gallery-item-5 {
+    left: 88.5%;
+    opacity: 1;
+    transform: translatex(-50%);
+}
+
+.gallery-controls {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 100px;
+}
+
+.gallery-controls button {
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    font-size: 30px;
+    text-transform: capitalize;
+}
+
+.gallery-controls-previous {
+    position: relative;
+
+}
+
+.gallery-controls-previous::before {
+    border: solid #000;
+    border-width: 0 5px 5px 0;
+    content: '';
+    display: inline-block;
+    height: 5px;
+    left: -40px;
+    padding: 10px;
+    position: absolute;
+    top: 16%;
+    transform: rotate(135deg) translateY(-50%);
+    transition: left 0.15s ease-in-out;
+    width: 5px;
+}
+
+.gallery-controls-previous:hover {
+    color: #732354;
+}
+
+.gallery-controls-previous:hover::before {
+    border-color: #732354;
+}
+
+.gallery-controls-next {
+    position: relative;
+
+}
+
+.gallery-controls-next::after {
+    border: solid #000;
+    border-width: 0 5px 5px 0;
+    content: '';
+    display: inline-block;
+    height: 5px;
+    position: absolute;
+    padding: 10px;
+    /* right: 10; */
+    top: 18%;
+    transform: rotate(-45deg) translateY(50%);
+    transition: right 0.15s ease-in-out;
+    width: 5px;
+}
+
+.gallery-controls-next:hover {
+    color: #732354;
+}
+
+.gallery-controls-next:hover::after {
+    border-color: #732354;
+}
+
+.gallery-nav {
+    bottom: -15px;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.gallery-nav li {
+    background-color: #ccc;
+    border-radius: 50%;
+    height: 10px;
+    margin: 0 16px;
+    width: 10px;
+}
+
+.gallery-nav li.gallery-item-selected {
+    background-color: #555;
+}
