@@ -44,26 +44,18 @@
 
 .gallery-container::after {
     content: '';
-    /* To create the pseudo-element */
     position: absolute;
-    /* To position it within the container */
     bottom: -6%;
-    /* Align it to the bottom */
     left: 50%;
-    /* Position it in the middle horizontally */
     transform: translateX(-50%);
-    /* Adjust its position to perfectly center it */
     width: 30vw;
-    /* Specify the width of the image */
     height: 34vh;
-    /* Specify the height of the image */
-    background-image: url('https://www.w3schools.com/w3images/fjords.jpg');
     background-image: url('/assets/img/stand_without_background.png');
     background-size: cover;
-    /* Cover the area of the pseudo-element */
     background-position: center;
-    /* Center the image inside the pseudo-element */
     z-index: 1;
+
+    filter: drop-shadow(5px 10px 20px rgba(0, 0, 0, 0.5));
 
 }
 
@@ -86,14 +78,14 @@
 }
 
 .gallery-item {
-    border: 13px solid #000;
-    box-shadow: 10px 10px 10px 5px rgba(0, 0, 0, 0.4), -10px 10px 10px 5px rgba(0, 0, 0, 0.4);
+    border: 12px solid #000;
     height: 35vh;
     width: 22vw;
     opacity: 0;
     position: absolute;
     transition: all 0.3s ease-in-out;
     z-index: 0;
+    box-shadow: 15px 20px 30px 0 rgba(0, 0, 0, 0.5);
 }
 
 .gallery-item-1 {
@@ -104,9 +96,7 @@
 
 .gallery-item-2,
 .gallery-item-4 {
-    /* box-shadow: -2px 5px 33px 6px rgba(0, 0, 0, 0.85); */
-    box-shadow: 10px 10px 10px 5px rgba(0, 0, 0, 0.4), -10px 10px 10px 5px rgba(0, 0, 0, 0.4);
-    border: 13px solid #000;
+    
     opacity: 1;
     height: 45vh;
     width: 28vw;
@@ -120,9 +110,6 @@
 }
 
 .gallery-item-3 {
-    /* box-shadow: -2px 5px 33px 6px rgba(0, 0, 0, 1); */
-    box-shadow: 10px 10px 10px 5px rgba(0, 0, 0, 0.4), -10px 10px 10px 5px rgba(0, 0, 0, 0.4);
-    border: 13px solid #000;
     height: 55vh;
     width: 35vw;
     /* height: 60vh;

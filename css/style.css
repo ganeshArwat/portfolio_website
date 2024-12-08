@@ -1,11 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Roboto", sans-serif;
+    font-family: "Inter", sans-serif;
+    /* font-family: "Roboto", sans-serif; */
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 
 /* HEADER */
@@ -104,6 +109,11 @@ header {
     padding: 15px 30px;
     border: 1px solid #732354;
     color: #fff;
+    
+    background-color: #68204c ;
+    /* border: 1px solid #FFF; */
+    color: #fff;
+
     text-decoration: none;
     font-size: 18px;
     transition: 0.3s;
@@ -180,8 +190,10 @@ header {
     background-color: #1a1a1a;
     color: #fff;
     overflow-y: scroll;
-    scrollbar-width: thin; /* Make scrollbar thinner */
-    scrollbar-color: #8ABA78 #1c1c1c; /* Thumb and track colors */
+    scrollbar-width: thin;
+    /* Make scrollbar thinner */
+    scrollbar-color: #8ABA78 #1c1c1c;
+    /* Thumb and track colors */
 }
 
 /* Skills Section */
@@ -344,7 +356,7 @@ header {
 }
 
 /* Certification Section */
-.Certification_banner{
+.Certification_banner {
     height: 300px;
     width: 100%;
     display: flex;
@@ -353,12 +365,14 @@ header {
     gap: 25px;
     background: -webkit-linear-gradient(45deg, #A4A3AB, #DED9DD);
 }
-.Certification_banner h2{
+
+.Certification_banner h2 {
     font-size: 45px;
     /* margin-left: 150px; */
     font-weight: bolder;
     text-align: center;
 }
+
 /* resume_section */
 .resume_section {
     height: 320px;
@@ -367,16 +381,19 @@ header {
     justify-content: center;
     gap: 25px;
 }
-.resume_section h2{
+
+.resume_section h2 {
     font-size: 45px;
     margin-left: 150px;
     font-weight: bolder;
 }
-.resume_section p{
+
+.resume_section p {
     font-size: 18px;
     margin-left: 100px;
     font-weight: 500;
 }
+
 .resume_section a:link,
 .resume_section a:visited {
     display: inline-block;
@@ -385,14 +402,14 @@ header {
     color: #fff;
     font-size: 22px;
     padding: 15px 30px;
-    align-self:flex-start;
+    align-self: flex-start;
     margin-left: 150px;
 }
 
 /* Contact Section */
 .contact_section {
     height: 350px;
-    
+
 }
 
 .contact_background {
@@ -408,15 +425,16 @@ header {
 }
 
 .contact_heading {
-   
+
     width: 45%;
     padding-left: 50px;
     font-size: 33px;
 }
+
 .contact_heading a:link,
 .contact_heading a:visited {
-   text-decoration: none;
-   color: #fff;
+    text-decoration: none;
+    color: #fff;
 }
 
 .contact_slogan {
@@ -427,10 +445,9 @@ header {
 }
 
 /* Footer */
-footer{
+footer {
     background-color: #1A1A1A;
     color: #fff;
     padding: 8px 50px;
     font-size: 14px;
 }
-
