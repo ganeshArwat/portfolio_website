@@ -78,7 +78,11 @@
 }
 
 .gallery-item {
-    border: 12px solid #000;
+    border: 15px solid #000;
+    border-image-width: 30px;
+    border-image-source: url('/assets/img/frame.jpg');
+    border-image-slice: 100;
+    border-image-repeat: repeat;
     height: 35vh;
     width: 22vw;
     opacity: 0;
